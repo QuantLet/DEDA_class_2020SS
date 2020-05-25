@@ -1,0 +1,9 @@
+Name of Quantlet: 'DEDA_2020SS_myproject'
+
+Published in: 'DEDA class 2020SS'
+
+Description: 'This a test template, for educational purpose.'
+
+Keywords: 'template, educational purpose'
+
+Author: 'Marius Sterling'
