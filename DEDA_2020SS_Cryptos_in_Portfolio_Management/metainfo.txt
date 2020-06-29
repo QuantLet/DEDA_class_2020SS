@@ -5,7 +5,7 @@ Published in: 'DEDA class 2020SS'
 
 Description: 'Investigation of benefits of introducing crytocurrencies in a traditial portfolio allocation'
 
-Keywords: 'returns, CRIX, cryptocurrency, portfolio-management'
+Keywords: 'returns, CRIX, cryptocurrency, portfolio-management, allocation'
 
 Author: 'Yuliya Gustap, Arash Moussavi'
 
