@@ -1,0 +1,161 @@
+Python Codes
+
+Code for generating Polarity and Subjectivity
+
+consumer_key = ''
+comsumer_secret = ''
+access_token = ''
+access_token_secret = ''
+auth = tweepy.OAuthHandler(consumer_key,consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+public_tweets = api.search('Bitcoin')
+for tweet in public_tweets:
+    print(tweet.text)
+    analysis = TextBlob(tweet.text)
+    print(analysis.sentiment)
+
+Streaming and Saving Polarity and Subjectivity Generated
+
+import tweepy
+from textblob import TextBlob
+from tweepy import Stream
+from tweepy.streaming import StreamListener
+
+consumer_key= ''
+consumer_secret=''
+access_token=''
+access_token_secret=''
+auth=tweepy.OAuthHandler(consumer_key,consumer_secret)
+auth.set_access_token(access_token,access_token_secret)
+api=tweepy.API(auth)
+public_tweets=api.search('cryptocurrencies')
+for tweet in public_tweets:
+    print(tweet.text)
+    analysis=TextBlob(tweet.text)
+    print(analysis.sentiment)
+    
+class listener(StreamListener):
+        
+    def on_data(self,data):
+         try:            
+            tweet = data.split(',"text":"')[1].split('","source')[0]
+            print (tweet)
+            
+            saveThis =tweet
+            saveFile = open('twitDB2.csv','a')
+            saveFile.write(saveThis)
+            saveFile.write('\n')
+            saveFile.close()
+            return True
+         except BaseException as e:
+            print ("Error on_data %s" % str(e))
+            time.sleep(5)
+    def on_error(self, status):
+        print (status)
+auth=tweepy.OAuthHandler(consumer_key,consumer_secret)
+auth.set_access_token(access_token,access_token_secret)
+
+twitterStream=Stream(auth,listener())
+twitterStream.filter(track=['cryptocurrencies'])
+
+Code for Generating Data Frame (Cleaned Table with Time Stamps)
+
+class listener(StreamListener):
+        
+    def on_data(self,data):
+         try:            
+            tweet = data.split(',"text":"')[1].split('","source')[0]
+            print (tweet)
+            
+            saveThis = str(date.time())+'::'+tweet
+            saveFile = open('twitDB3.csv','a')
+            saveFile.write(saveThis)
+            saveFile.write('\n')
+            saveFile.close()
+            return True
+         except BaseException as e:
+            print ("Error on_data %s" % str(e))
+            time.sleep(5)
+    def on_error(self, status):
+        print (status)
+auth=tweepy.OAuthHandler(consumer_key,consumer_secret)
+auth.set_access_token(access_token,access_token_secret)
+
+twitterStream=Stream(auth,listener())
+twitterStream.filter(track=['cryptocurrencies'])
+
+Codes for Tokenization of the DataFrame (Table)
+
+def get_trainTokens(btc):
+    os.chdir(directory + 'cryptocurrencies/'+str(btc))
+    all_tokens = []
+    print "tokenizing " + genre + " cryptocurrencies"
+    for file in glob.glob("*.txt"):
+        f = open(file)
+        tokens = nltk.word_tokenize(f.read().decode("twitDB.txt"))
+        all_tokens += tokens
+        f.close()
+    return all_tokens
+    
+    Code for Unigram
+    
+    def get_uniCounts(all_tokens):
+    unigram_table = {}
+    for token in all_tokens:
+        if token in unigram_table:
+            unigram_table[token] += 1
+        else:
+            unigram_table[token] = 1
+    return unigram_table, len(all_tokens)
+    
+    Code for Wordcloud
+    
+    from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+from PIL import Image
+import numpy as np
+f= "write words here"
+mask = np.array(Image.open('Snip.png'))
+
+wordcloud = WordCloud(width = 100, height = 100,
+                    background_color = 'white',
+                    min_font_size = 1,mask = mask).generate(f)
+
+wordcloud.to_file('Image.png')
+
+print ('Image.png')
+
+plt.imshow(wordcloud)
+plt.axis('off')
+plt.show()
+
+Code for Creating Chart
+
+tweets=tweepy.Cursor(api.search,q=public_tweets).items(public_tweets)
+positive=0
+negative=0
+neutral=0
+polarity=0
+for tweet in public_tweets:
+    analysis=TextBlob(tweet.text)
+polarity+=analysis.sentiment.polarity
+
+if(analysis.sentiment.polarity==0):
+    neutral+=1
+elif(analysis.sentiment.polarity <0.0):
+    negative+=1
+elif(analysis.sentiment.polarity >0.0):
+    positive+=1
+    
+    
+positive=format(positive,'.1f')
+negative=format(negative,'.1f')
+neutral=format(neutral,'.1f')
+labels=['neutral', 'positive', 'negative']
+values=[74,20,6]
+plt.bar(labels,values)
+plt.title('Sentiments classified into Bar-Graph')
+
+
+
