@@ -1,0 +1,13 @@
+Name of Quantlet: 'CrypOpt_ImpliedVola'
+
+Published in: 'DEDA_class_2020SS/DEDA_2020SS_Crypto_Options_RND_HD'
+
+Description: 'Uses parameters of option to approximates the implied volatility via the Black-Scholes-Formula (red). Compares to implied volatility from Deribit API (blue).'
+
+Keywords: 'implied volatility, bitcoin, options'
+
+Author: 'Franziska Wehrmann'
+
+Submitted:  '08. Aug 2020, Franziska Wehrmann'
+
+Datafile: 'trades_clean.csv: Clean version of Deribit options trades, we are only interested in WHICH option were traded, not how often (delete duplicates).'
