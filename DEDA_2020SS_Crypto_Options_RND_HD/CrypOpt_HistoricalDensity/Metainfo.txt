@@ -1,0 +1,15 @@
+Name of Quantlet: 'CrypOpt_HistoricalDensity'
+
+Published in: 'DEDA_class_2020SS/DEDA_2020SS_Crypto_Options_RND_HD'
+
+Description: 'Uses Monte Carlo sampling on historical returns to estimate historical density of underlying of an option.'
+
+Keywords: 'sampling, crypto options, cryptocurrency, historical density, physical density, gif'
+
+Author: 'Franziska Wehrmann'
+
+See also: 'CrypOpt_RNDandHD'
+
+Submitted:  '08. Aug 2020, Franziska Wehrmann'
+
+Datafile: 'BTCUSDT.csv: Daily BTCUSDT price 2017-08-17 to 2020-04-30.'
