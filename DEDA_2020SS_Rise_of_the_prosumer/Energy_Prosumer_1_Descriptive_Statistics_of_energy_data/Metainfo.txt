@@ -22,4 +22,4 @@ Datafile:
 
 Input: '100 consumer/prosumer data sets containing energy consumption/production in 3-minute intervals for one year (2017) from  https://github.com/QuantLet/BLEM/tree/master/data'
 
-Output: 'plots of consumer/prosumer's energy consumption/production and plot of net energy production/consumption'
+Output: "plots of consumer/prosumer's energy consumption/production and plot of net energy production/consumption"
