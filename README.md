@@ -1,4 +1,4 @@
-[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantnet.hu-berlin.de/index.php?p=info)
 # DEDA_class_2020SS
 Digital Economy & Decision Analytics class 2020 Summer Semester
 
