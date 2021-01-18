@@ -1,4 +1,4 @@
-For the code see: *20200806 Mou Gus Role of cryptos is PM.R*  
+For the R code see: *Cryptocurrencies in Portfolio Management: final code.R*  
 For the presentation see: *Presentation Role of CCs in Portfolio Management.pdf*
 # Project Description
 In this project Yuliya Gustap and Arash Moussavi together with the Blockchain Research Center of Humboldt University of Berlin attempted to determine the effects of introducing cryptocurrencies into a traditional diversified portfolio, which includes stocks, fixed income, commodities and currencies.
