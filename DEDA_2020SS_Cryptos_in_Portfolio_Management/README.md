@@ -1,5 +1,5 @@
-For the code see: *The code of the final analysis*
-For the presentation see: *Add the presentation of the project*
+For the code see: *20200806 Mou Gus Role of cryptos is PM.R*  
+For the presentation see: *Presentation Role of CCs in Portfolio Management.pdf*
 # Project Description
 In this project Yuliya Gustap and Arash Moussavi together with the Blockchain Research Center of Humboldt University of Berlin attempted to determine the effects of introducing cryptocurrencies into a traditional diversified portfolio, which includes stocks, fixed income, commodities and currencies.
 *CRIX* - the diversified crytocurrency index - was used as a proxy of total cryptocurrency universe. 
