@@ -277,5 +277,3 @@ qqPlot(returns$CRIX)
 qqPlot(returns$BCOM)
 
 ```
-
-automatically created on 2020-08-17
