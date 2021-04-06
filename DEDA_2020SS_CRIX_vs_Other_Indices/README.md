@@ -23,9 +23,9 @@ Datafile: 'indices.xlsx'
 
 ![Picture1](CRIX_Values.png)
 
-![Picture2](Correlation Coefficients_Heatmap (Returns).png)
+![Picture2](Correlation_Coefficients_Heatmap_Returns.png)
 
-![Picture3](Correlation Coefficients_Heatmap (Values).png)
+![Picture3](Correlation_Coefficients_Heatmap_Values.png)
 
 ![Picture4](Index_Values_Plot.png)
 
