@@ -28,7 +28,7 @@ Datafile:
 
 Input: csv-files containing energy production data in 15-minute time interval, self-consumption of prosumers, net production of prosumers, consumption of consumers,  aggregate production and consumption, net load and battery simulation
 
-Output: csv-files containing the interaction with the grid, the demand covered by the community grid, the battery charging power, the battery discharging power,
+Output: csv-files containing the interaction with the grid, the demand covered by the community grid, the battery charging power, the battery discharging power, the supply demand ratio, the energy selling and buying prices, the self-consumption rate of the grid, the self-sufficiency of the grid, the cost of the community energy, the energy bill of the consumer in a P2G model, the energy bill of the prosumer in a P2G model, the energy bill of the consumer in a P2P model, energy prices; the plotted self-consumption rate of the grid, the plotted self-sufficiency of the grid, the plotted energy bill of the consumer in a P2G model, the plotted energy bill of the prosumer in a P2G model, the plotted energy bill of the consumer in a P2P model, a grid of plots for P2P energy sharing, boxplots of energy prices
 
 ```
 <div align="center">
