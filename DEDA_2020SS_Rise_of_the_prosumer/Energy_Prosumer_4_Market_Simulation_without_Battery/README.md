@@ -28,7 +28,7 @@ Datafile:
 
 Input: csv-files containing energy production data in 15-minute time interval, self-consumption of prosumers, net production of prosumers, consumption of consumers,  agregate production and consumption, net load and battery simulation
 
-Output: csv-files containing energy demand covered by production of the microgrid, the supply demand ratio with no battery, the energy selling and buying prices, the self-consumption rate of the grid, the self-sufficiency of the grid, the cost of the community energy,
+Output: csv-files containing energy demand covered by production of the microgrid, the supply demand ratio with no battery, the energy selling and buying prices, the self-consumption rate of the grid, the self-sufficiency of the grid, the cost of the community energy, the energy bill of the consumer in a P2P model, energy prices; the plotted self-consumption rate of the grid, the plotted self-sufficiency of the grid, the plotted energy bill of the consumer in a P2P model, the plotted P2P energy sharing in summer
 
 ```
 <div align="center">
