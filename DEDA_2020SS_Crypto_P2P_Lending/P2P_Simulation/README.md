@@ -9,7 +9,7 @@ Name of Quantlet: P2P_Simulation
 
 Published in: DEDA Class SS2020
 
-Description: Simulation of Bitcoin prices and LTV ratios using a stochastic volatility with correlated jumps model
+Description: Simulation of Bitcoin prices and LTV ratios using a stochastic volatility with correlated jumps model and computation of the expected value of an exemplary crypto-collateralized P2P lending contract.
 
 Keywords: bitcoin, crypto collateral, p2p lending, ltv ratio, SVCJ
 
